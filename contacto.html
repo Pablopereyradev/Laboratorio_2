@@ -5,14 +5,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto | Pablo Pereyra</title>
+    <title>Pablo Pereyra | Desarrollador Web</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <nav>
         <ul>
+          <h2>
+            Pablo Pereyra
+            <img src="img/curza_logo.png" alt="Logo CURZA" id="logo-curza" />
+          </h2>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="acercade.html">Sobre mí</a></li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -97,84 +107,84 @@
 
         <label for="codigo_postal">Código postal:</label>
         <input
-        type="text"
-        id="codigo_postal"
-        name="codigo_postal"
-        pattern="[A-Z][0-9]{4}[A-Z]{3}"
-        placeholder="Ejemplo: A1234ABC"
+          type="text"
+          id="codigo_postal"
+          name="codigo_postal"
+          pattern="[A-Z][0-9]{4}[A-Z]{3}"
+          placeholder="Ejemplo: A1234ABC"
         /><br /><br />
-        
+
         <fieldset>
-            <legend>Método Preferido de Contacto</legend>
-            <label for="email_contact">
-              <input
-                type="radio"
-                id="email_contact"
-                name="metodo_contacto"
-                value="correo electrónico"
-                checked
-              />
-              Correo electrónico
-            </label><br />
-            
-            <label for="telefono_contact">
-              <input
-                type="radio"
-                id="telefono_contact"
-                name="metodo_contacto"
-                value="teléfono"
-              />
-              Teléfono
-            </label><br />
-          
-            <label for="postal_contact">
-              <input
-                type="radio"
-                id="postal_contact"
-                name="metodo_contacto"
-                value="correo postal"
-              />
-              Correo Postal
-            </label>
-          </fieldset>
-          
-          <fieldset>
-            <legend>Tipo de suscripción</legend>
-            <label for="noticias">
-              <input
-                type="checkbox"
-                id="noticias"
-                name="suscripcion"
-                value="noticias"
-              />
-              Noticias
-            </label><br />
-            
-            <label for="promociones">
-              <input
-                type="checkbox"
-                id="promociones"
-                name="suscripcion"
-                value="promociones"
-              />
-              Promociones
-            </label><br />
-          
-            <label for="alertas">
-              <input
-                type="checkbox"
-                id="alertas"
-                name="suscripcion"
-                value="alertas"
-              />
-              Alertas y eventos
-            </label>
-          </fieldset>
-          
-          <br /><br />
-          <button type="submit">Cargar</button>
+          <legend>Método Preferido de Contacto</legend>
+          <label for="email_contact">
+            <input
+              type="radio"
+              id="email_contact"
+              name="metodo_contacto"
+              value="correo electrónico"
+              checked
+            />
+            Correo electrónico </label
+          ><br />
+
+          <label for="telefono_contact">
+            <input
+              type="radio"
+              id="telefono_contact"
+              name="metodo_contacto"
+              value="teléfono"
+            />
+            Teléfono </label
+          ><br />
+
+          <label for="postal_contact">
+            <input
+              type="radio"
+              id="postal_contact"
+              name="metodo_contacto"
+              value="correo postal"
+            />
+            Correo Postal
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tipo de suscripción</legend>
+          <label for="noticias">
+            <input
+              type="checkbox"
+              id="noticias"
+              name="suscripcion"
+              value="noticias"
+            />
+            Noticias </label
+          ><br />
+
+          <label for="promociones">
+            <input
+              type="checkbox"
+              id="promociones"
+              name="suscripcion"
+              value="promociones"
+            />
+            Promociones </label
+          ><br />
+
+          <label for="alertas">
+            <input
+              type="checkbox"
+              id="alertas"
+              name="suscripcion"
+              value="alertas"
+            />
+            Alertas y eventos
+          </label>
+        </fieldset>
+
+        <br /><br />
+        <button type="submit">Cargar</button>
       </form>
-      
+
       <section>
         <h2>Información Ingresada</h2>
         <table>
@@ -239,5 +249,7 @@
       </p>
       <p>Centro Regional Zona Atlántica, Viedma, Río Negro, Argentina</p>
     </footer>
+    <a href="#" class="scroll-to-top" id="scrollToTop"> &#8679; </a>
+    <script src="script.js"></script>
   </body>
 </html>

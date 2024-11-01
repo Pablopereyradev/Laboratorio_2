@@ -1,3 +1,12 @@
+
+.montserrat-unique {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+}
+  
+
 html, body, ul, li {
     margin: 0;
     padding: 0;
@@ -17,31 +26,45 @@ body {
 }
 
 header {
+    font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
-    padding: 20px;
-    text-align: end;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
 header h2 {
     color: #000000;
     margin: 0;
-    text-align: left;
+    padding-right: 30rem;
+}
+
+nav {
+    display: flex;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 10px;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 20px;
+    padding: 15px 0;
 }
 
 form {
@@ -173,4 +196,63 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+#logo-curza {
+    width: 30px;
+    margin-left: 10px;
+    animation: rotateLogo 2s;
+}
+
+@keyframes rotateLogo {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+.about-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 70px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto; 
+}
+
+.about-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.about-content p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; 
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
 }
